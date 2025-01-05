@@ -1,0 +1,83 @@
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    color: aquamarine;
+  }
+  
+  .clock-container {
+    text-align: center;
+  }
+  
+  .date, .day {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6efff8;
+    background-color: #52525291;
+    padding: 5px;
+  }
+  .day {
+    border-radius: 10px 10px 0 0;
+    padding-top: 15px;
+    color: aquamarine;
+  }
+  .date {
+    padding-bottom: 25px;
+    font-weight: 100;
+  }
+  
+  .time {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: #52525291;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .time .value {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  
+  .time-part {
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .value {
+    font-size: 4rem;
+    color: #ff36ff;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #aaa;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+
+  /* task area  */
+  #daylight, #night {
+    background-color: #52525291;
+    padding: 0px 10px;
+    border-radius: 10px;
+  }
