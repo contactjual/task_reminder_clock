@@ -10,35 +10,52 @@
     box-sizing: border-box;
   }
 
+  .container {
+    width: 95%;
+    max-width: 2000px;
+    margin: auto;
+  }
+
   main {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    gap: 10px;
     width: 100%;
     color: aquamarine;
   }
-  
+
   .clock-container {
     text-align: center;
+    max-width: 500px;
   }
-  
-  .date, .day {
+
+  .clock-container2 {
+    display: none;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .date,
+  .day {
     font-size: 1.5rem;
     font-weight: bold;
     color: #6efff8;
     background-color: #52525291;
     padding: 5px;
   }
+
   .day {
     border-radius: 10px 10px 0 0;
     padding-top: 15px;
     color: aquamarine;
   }
+
   .date {
     padding-bottom: 25px;
     font-weight: 100;
   }
-  
+
   .time {
     display: flex;
     justify-content: center;
@@ -52,32 +69,78 @@
     font-size: 5rem;
     font-weight: 900;
   }
-  
+
   .time-part {
     margin: 0 10px;
     text-align: center;
   }
-  
+
   .value {
     font-size: 4rem;
     color: #ff36ff;
   }
-  
+
   .label {
     font-size: 1rem;
     color: #aaa;
   }
-  
+
   .title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20px;
   }
-  
+
 
   /* task area  */
-  #daylight, #night {
+  #daylight,
+  #night {
     background-color: #52525291;
     padding: 0px 10px;
     border-radius: 10px;
+  }
+
+  #daylight h2,
+  #night h2 {
+    color: #6efff8;
+  }
+
+  /* task color  */
+  .task_colo {
+    color: #ff36ff;
+    font-weight: bolder;
+  }
+
+
+
+
+  /* responsive......................................................... */
+
+  @media screen and (max-width: 1000px) {
+    main {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding-top: 10px;
+    }
+
+    .clock-container {
+      display: none;
+    }
+
+    .clock-container2 {
+      display: block;
+    }
+
+    #daylight,
+    #night {
+      background-color: black;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .time .value {
+      font-size: 4rem;
+      font-weight: 600;
+    }
   }
